@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    function getcur(){
+        let sv=document.getElementById("select");
+        let c= parseInt(document.getElementById("currency").value);
+        if(sv.value=="dinar")
+        {
+            dinar=c*210;
+            document.getElementById("inp3").value=dinar;
+        }
+        if(sv.value=="pound")
+        {
+            pound=c*190;
+            document.getElementById("inp3").value=pound;
+        }
+        if(sv.value=="dirham")
+        {
+            dirham=c*22;
+            document.getElementById("inp3").value=dirham;
+        }
+    }
+</script>
+
+    <input type="text"placeholder="Rupees" id="currency"/>
+    <select id="select">
+        <option value="dinar">dinar</option>
+        <option value="pound">pound</option>
+        <option value="dirham">dirham</option>
+        
+    </select>
+    <input type="button" value="convert" onclick="getcur()"/>  
+    <input type="text" id="inp3"/>
+</form>
+    
+</body>
+</html>

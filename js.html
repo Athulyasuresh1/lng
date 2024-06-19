@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <script src="ext.js"> 
+
+    </script>  -->
+</head>
+<body>
+
+    <!-- <script>
+        console.log("Hello")
+        let a=20;
+        let A=30;
+        console.log(a,A)
+        // console.log(A)
+    </script> -->
+
+    <script>
+        
+    // function myfun(a,b)
+    // {
+    //     alert(a*b)
+    //  }
+    //  myfun(5,2)
+
+    // function getInfo()
+    // {
+    //     return "hello"
+    // }
+    // document.write(getInfo());
+
+    // function myfun()
+    // {
+    //     let name="akshay"
+    //     console.log(name)
+    // }
+    // myfun()
+    
+    // let name="akshay"
+    // function myfun()
+    // {
+        
+    // }
+    // document.write(name)
+    // myfun()
+
+    //  var str="javascript";
+    //  document.write(str.charAt(2));
+
+    // var s1="javascript ";
+    // var s2="html";
+    // var s3=s1.concat(s2);
+    // document.write(s3);
+
+    // var s1="javascript index test";
+    // var n =s1.indexOf("test");
+    // document.write(n);
+
+    // var s1="JavaScript toLowerCase";
+    // var s2=s1.toLowerCase();
+    // document.write(s2);
+
+    //var s1="abcdefgh";
+    //var s2=s1.slice(2,5);
+    //document.write(s2);
+
+
+    // let fruits =["Apple","Orange","Guava"]
+    // console.log(fruits[0])
+    // console.log(fruits[1])
+    // document.write(fruits[2])
+    // console.log(fruits)
+
+     //const color=[1,2,3]
+    // let color2=color.toString()
+    // document.write(color2)
+    // document.write(typeof color2)
+
+    // let color3=color.join(" black ")
+    // document.write(color3)
+
+    // const num=[2,4,5,6,6]
+    // let x=num.join("blue")
+    // document.write(x,"<br>") 
+
+    // const color=["red","blue","yellow"]
+    // let x=color.pop()
+    // document.write(color+"  this is the modified version")
+    // document.write(x)
+    // document.write(color);
+
+    //    const color=["red","blue","yellow"]
+    //    let x= color.push("orange")
+    //    document.write(color)
+
+    //   const color=["red","blue","yellow"]
+    //    let x=color.shift()//delete fisrt element
+    //    document.write(color)\
+
+    
+    // let x=color.unshift//insert deleted element
+    // document.write(color)
+
+    // delete color[0]//Delete a particular element
+    //     color[2]="pink"//insert element at any part
+    //     document.write(color)
+
+        // let num=[2,7,8,9,6,5]
+        // let x=" "
+        // num.forEach(function(z){//adding 2into each element
+        // x += z+2
+        // })
+        // console.log(x);
+
+        // const num=[2,7,8,9,6,5]
+        //  const modi=num.map(function(y){
+        //  return (y+6)
+        // })
+        // console.log(modi);
+
+        
+        //  let num=[2,7,8,9,6,5]
+        //  const filterarray=num.filter(function(y){//filter the element and find the 
+        //      return (y>6)
+        //  })
+        //  console.log(filterarray);
+        //  document.write(filterarray)
+
+        // let fruits=["apple","orange","mango"]
+        // for(i=0;i<fruits.length;i++)
+        // {
+        //     console.log(fruits[i])
+        // }
+         
+//javascript objects
+
+// emp ={id:102,name:"Athulya",salary:40000}
+// document.write(emp.id+""+emp.name+""+emp.salary);
+
+// var emp =new Object();
+// emp.id=101;
+// emp.name="Athulya";
+// emp.salary=50000;
+// document.write(emp.id+""+emp.name+""+emp.salary);
+
+// function emp(id,name,salary)
+// {
+//   this.id=id;
+//   this.name=name;
+//   this.salary=salary;
+// }
+// e=new emp(103,"Vimal Jaiswal",30000);
+// document.write(e.id+" "+e.name+" "+e.salary);
+
+// let user={
+// name:"John",
+// age:30,
+// isAdmin:true
+// }
+// document.write(user.age);
+// console.log(user)
+
+// function BigUser(){
+//     this.name="John"
+//     return{name:"Godzilla"};
+// }
+// alert(new BigUser().name);
+
+
+    // function getCube()
+    // {
+    //     var number=document.getElementById("number").value;
+    //     alert(number*number*number)
+    // }
+    // function getSum()
+    // {
+    //     var number1=parseInt (document.getElementById("number1").value);
+    //     var number2= parseInt(document.getElementById("number2").value);
+    //     alert(number1+number2)
+    // } 
+
+    function getSum()
+    {
+        var number1=parseInt (document.getElementById("number1").value);
+        var number2= parseInt(document.getElementById("number2").value);
+        alert(number1+number2)
+    }
+    function getSub()
+    {
+        var number1=parseInt (document.getElementById("number1").value);
+        var number2= parseInt(document.getElementById("number2").value);
+        alert(number1-number2)
+    }
+    function getProd()
+    {
+        var number1=parseInt (document.getElementById("number1").value);
+        var number2= parseInt(document.getElementById("number2").value);
+        alert(number1*number2)
+    }
+    function getDiv()
+    {
+        var number1=parseInt (document.getElementById("number1").value);
+        var number2= parseInt(document.getElementById("number2").value);
+        alert(number1/number2)
+    }
+    function calculator()
+    {
+        var number1=parseInt (document.getElementById("number1").value);
+        var number2= parseInt(document.getElementById("number2").value);
+
+    let selectValue=document.getElementById("select")
+    if(selectValue.value==="add")
+    {
+        //<input type="button" value="+" onclick="getSum()"/><br/>
+        getSum();
+    }
+    else if(selectValue.value==="sub")
+    {
+        //<input type="button" value="-" onclick="getSub()"/><br/>
+        //alert(number1-number2)
+        getSub();
+    }
+    else if(selectValue.value==="prod")
+    {
+        //<input type="button" value="*" onclick="getProd()"/><br/>
+        //alert(number1*number2)
+        getProd();
+
+    }
+    else
+    {
+        //<input type="button" value="/" onclick="getDiv()"/><br/> 
+       // alert(number1/number2)
+       getDiv();
+
+
+    }
+}
+    
+
+
+
+
+    </script>
+    <form>
+    <!-- <button type="submit" onclick="myfun(5,2)">
+        click me
+    </button> -->
+    <!-- <input type="text" id="number" name="number"/><br/>
+    <input type ="button" value="cube" onclick="getCube()"/> -->
+     
+    <!-- <input type="text" id="number1"/><br/>
+    <input type="text" id="number2"/><br/>
+    <input type="button" value="sum" onclick="getSum()"/> -->
+    
+    <input type="text" id="number1"/>
+    <select id="select">
+        <option value="add">+</option>
+        <option value="sub">-</option>
+        <option value="mul">*</option>
+        <option value="div">/</option>
+    </select>
+    <input type="text" id="number2"/>
+    <input type="button" value="calculate" onclick="calculator()"/> 
+</form>
+
+    
+
+    
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bank.css">
+    <script>
+  
+        let a=0;
+        function deposit()
+        {
+          
+            let amount = parseInt(document.getElementById("am").value);
+            a=a+amount;
+            document.getElementById("bal").value=a;
+            
+    }
+    function withdraw()
+    {
+        let amount = parseInt(document.getElementById("am").value);
+        let balance= parseInt(document.getElementById("bal").value);
+        let withamnt=balance-amount
+        document.getElementById("bal").value=withamnt;
+    
+    }
+</script>
+</head>
+<body>
+   <form>
+    <div class="a">
+        
+        <h1><center>ABC Bank Trivandrum  </center></h1>
+        Enter Your Name<input type="text" id="name" /><br><br>
+        Enter Your Account Number<input type="text" id="acno"/><br><br>
+        Enter Your Amount<input type="text" id="am"/><br><br>
+        <input type="button" value="Deposit"onclick="deposit()"/>
+        <input type="button" value="Withdraw"onclick="withdraw()"/><br><br>
+        Your Available Balance<input type="text"  placeholder="0" id="bal"/>
+        <h3>Thankyou</h3>
+  
+
+
+    </div>
+    </form>
+    
+</body>
+</html>

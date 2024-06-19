@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+function log()
+{
+    let u=document.getElementById("u1").value;
+    let p=document.getElementById("p1").value;
+    if(u=="athulya"&& p=="123")
+    {
+        
+    alert("sucess");
+    }
+    else if(u!="athulya"&&p=="123"){
+        alert(" Inavalid username");
+    }
+    else if(u=="athulya"&&p!="123")
+    {
+        alert("Invalid password");
+    }
+    else
+    {
+         alert("Invalid user")
+    }
+    
+}
+</script>
+<form>
+    <div>
+        <center>
+        <h1>Login Form</h1>
+        Username:<input type="text" id="u1"/><br><br>
+        Password:<input type="password" id="p1"/><br><br>
+        <input type="button" value="Login" onclick="log()"/>
+        </center>
+    </div>
+</form>
+<h1></h1>
+    
+</body>
+</html>
